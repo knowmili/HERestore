@@ -60,11 +60,17 @@ HERestore demonstrates significant improvements in H&E image quality:
 - Enhanced resolution and clarity for better cellular detail visualization
 - Accurate segmentation masks for downstream analysis
 - Maintained histological features across multiple scales
+- Improved cell detection performance with deep learning models like CellViT++
 
-### Sample Output:
-![LR vs SR vs HR Comparison](path/to/comparison_image.png)
+### Visual Quality Enhancement:
+![LR vs SR vs HR Comparison](lr_sr_hr_comparison.png)
 
 *Comparison of Low-Resolution, Super-Resolution (HERestore), and High-Resolution H&E images*
+
+### Cell Detection Improvement:
+![Cell Detection Comparison](cell_comparison.png)
+
+*Comparison of cell detection performance: Number of cells detected by CellViT++ on Low-Resolution vs Super-Resolution images. HERestore enables significantly more accurate cell quantification.*
 
 ## 🤝 Contributing
 
