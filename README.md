@@ -5,6 +5,17 @@
 
 HERestore is a cutting-edge deep learning project designed to enhance the quality of Hematoxylin and Eosin (H&E) stained images obtained from Visium spatial transcriptomics. By leveraging advanced super-resolution techniques, HERestore transforms low-resolution H&E images into high-fidelity representations, enabling more accurate downstream analysis in biomedical research.
 
+<div style="display:flex; gap:16px; flex-wrap:wrap;">
+  <div style="flex:1; min-width:300px; text-align:center;">
+    ![Slide 3 HR](slide3_hr.png)
+    <p><strong>Slide 3 HR</strong></p>
+  </div>
+  <div style="flex:1; min-width:300px; text-align:center;">
+    ![Slide 3 Cellpose Mask](slide3_cellpose_mask.png)
+    <p><strong>Slide 3 CellPose Mask</strong></p>
+  </div>
+</div>
+
 ## 🎯 Motivation
 
 H&E images obtained from Visium spatial transcriptomics platforms suffer from significant limitations due to their inherently low resolution. These low-resolution images pose critical challenges for downstream analysis:
