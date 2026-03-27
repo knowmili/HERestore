@@ -5,18 +5,10 @@
 
 HERestore is a cutting-edge deep learning project designed to enhance the quality of Hematoxylin and Eosin (H&E) stained images obtained from Visium spatial transcriptomics. By leveraging advanced super-resolution techniques, HERestore transforms low-resolution H&E images into high-fidelity representations, enabling more accurate downstream analysis in biomedical research.
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="slide3_hr.png" alt="Slide 3 HR" width="400"><br>
-      <strong>Slide 3 HR</strong>
-    </td>
-    <td align="center">
-      <img src="slide3_cellpose_mask.png" alt="Slide 3 Cellpose Mask" width="400"><br>
-      <strong>Slide 3 CellPose Mask</strong>
-    </td>
-  </tr>
-</table>
+### Cell Detection Improvement using CellVit++ visualized on QuPath:
+![Cell Detection Comparison](cell_comparison.png)
+
+*Comparison of cell detection performance: Number of cells detected by CellViT++ on Super-Resolution vs Low-Resolution images. HERestore enables significantly more accurate cell quantification.*
 
 ## 🎯 Motivation
 
@@ -60,6 +52,20 @@ HERestore employs a **PyramidSRSegModel** consisting of:
 
 - **Dataset**: ~19,000 H&E patches from Visium slides
 - **Masks**: Generated using CellPose for accurate cell segmentation
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="slide3_hr.png" alt="Slide 3 HR" width="400"><br>
+      <strong>Slide 3 HR</strong>
+    </td>
+    <td align="center">
+      <img src="slide3_cellpose_mask.png" alt="Slide 3 Cellpose Mask" width="400"><br>
+      <strong>Slide 3 CellPose Mask</strong>
+    </td>
+  </tr>
+</table>
+
 - **Framework**: PyTorch with custom data loading and augmentation
 - **Optimization**: Trained with focus on perceptual quality and segmentation accuracy
 
@@ -78,8 +84,3 @@ HERestore demonstrates significant improvements in H&E image quality:
 ![LR vs SR vs HR Comparison](hr_lr_sr_comparison.png)
 
 *Comparison of Low-Resolution, Super-Resolution (HERestore), and High-Resolution H&E images*
-
-### Cell Detection Improvement using CellVit++ visualized on QuPath:
-![Cell Detection Comparison](cell_comparison.png)
-
-*Comparison of cell detection performance: Number of cells detected by CellViT++ on Super-Resolution vs Low-Resolution images. HERestore enables significantly more accurate cell quantification.*
