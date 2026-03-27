@@ -1,8 +1,7 @@
 # HERestore: Deep Learning-Based H&E Image Enhancement for Visium
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-red.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 HERestore is a cutting-edge deep learning project designed to enhance the quality of Hematoxylin and Eosin (H&E) stained images obtained from Visium spatial transcriptomics. By leveraging advanced super-resolution techniques, HERestore transforms low-resolution H&E images into high-fidelity representations, enabling more accurate downstream analysis in biomedical research.
 
@@ -62,12 +61,12 @@ HERestore demonstrates significant improvements in H&E image quality:
 - Maintained histological features across multiple scales
 - Improved cell detection performance with deep learning models like CellViT++
 
-### Visual Quality Enhancement:
+### Cell Detection Improvement using DeepLIIF:
 ![LR vs SR vs HR Comparison](hr_lr_sr_comparison.png)
 
 *Comparison of Low-Resolution, Super-Resolution (HERestore), and High-Resolution H&E images*
 
-### Cell Detection Improvement:
+### Cell Detection Improvement using CellVit++ visualized on QuPath:
 ![Cell Detection Comparison](cell_comparison.png)
 
 *Comparison of cell detection performance: Number of cells detected by CellViT++ on Super-Resolution vs Low-Resolution images. HERestore enables significantly more accurate cell quantification.*
