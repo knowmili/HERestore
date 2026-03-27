@@ -51,7 +51,7 @@ HERestore employs a **PyramidSRSegModel** consisting of:
 - **Framework**: PyTorch with custom data loading and augmentation
 - **Optimization**: Trained with focus on perceptual quality and segmentation accuracy
 
-**Note**: The trained model weights are not included in this repository as the project is currently under publication review. The code implementation is provided for reference and reproducibility purposes.
+**Note**: The trained model weights are not included in this repository as the project is currently under publication review.
 
 ## 📈 Results
 
@@ -63,39 +63,11 @@ HERestore demonstrates significant improvements in H&E image quality:
 - Improved cell detection performance with deep learning models like CellViT++
 
 ### Visual Quality Enhancement:
-![LR vs SR vs HR Comparison](lr_sr_hr_comparison.png)
+![LR vs SR vs HR Comparison](hr_lr_sr_comparison.png)
 
 *Comparison of Low-Resolution, Super-Resolution (HERestore), and High-Resolution H&E images*
 
 ### Cell Detection Improvement:
 ![Cell Detection Comparison](cell_comparison.png)
 
-*Comparison of cell detection performance: Number of cells detected by CellViT++ on Low-Resolution vs Super-Resolution images. HERestore enables significantly more accurate cell quantification.*
-
-## 🤝 Contributing
-
-We welcome contributions! Please feel free to submit issues, feature requests, or pull requests.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **Milind** - *Initial work and model development*
-
-## 🙏 Acknowledgments
-
-- Visium platform for providing the H&E imaging data
-- CellPose for segmentation mask generation
-- PyTorch community for the deep learning framework
-
----
-
-*Enhancing H&E imaging for better spatial transcriptomics analysis*
+*Comparison of cell detection performance: Number of cells detected by CellViT++ on Super-Resolution vs Low-Resolution images. HERestore enables significantly more accurate cell quantification.*
